@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: #767676;
+}
+
+ul,li{
+    list-style: none;
+}
+
+.mr0{
+    margin-right: 0 !important;
+}
+
+body{
+    color: #767676;
+    font-size: 14px;
+}

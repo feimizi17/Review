@@ -1,0 +1,116 @@
+
+
+.main{
+    width: 100%;
+}
+
+.main-c{
+    width: 1200px;
+    height: 1237px;
+    margin:0 auto;
+}
+
+.main-c .tip{
+    padding: 20px 0 29px;
+}
+.main-c .tip span{
+    color: #668aca;
+}
+
+.main .title .cname{
+    font-size: 18px;
+    height: 17px;
+    line-height: 17px;
+}
+
+.main .title .ename{
+    font-size: 12px;
+    height: 10px;
+    line-height: 10px;
+    margin: 6px 0 7px;
+}
+
+.main .title .line{
+    display: block;
+    width: 30px;
+    height: 1px;
+    background-color: #989898;
+}
+
+.team-list{
+    overflow: hidden;
+    margin-bottom: 100px;
+}
+
+.team-item{
+    float: left;
+    width: 550px;
+    height: 200px;
+    margin-top: 30px;
+    margin-right: 50px;
+}
+
+.team-item .cover{
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+
+.team-item .info{
+    float: left;
+    width: 323px;
+    height: 200px;
+    color: #6b6b6b;
+    margin-left: 22px;
+}
+
+.team-item .info .cname{
+    font-size: 18px;
+    font-weight: bolder;
+    margin-top: 34px;
+}
+
+.team-item .info .level{
+    margin-top: 9px;
+}
+
+.team-item .info .desc{
+    margin: 13px 0 16px;
+    font-size: 12px;
+    line-height: 22px;
+}
+
+.team-item .info span{
+    display: block;
+    width: 60px;
+    height: 1px;
+    background-color: #e2e2e2;
+}
+
+.company{
+    overflow: hidden;
+}
+.company .company-info{
+    float: left;
+    width: 610px;
+}
+
+.company .company-cover{
+    float: right;
+    width: 500px;
+    height: 300px;
+    margin-top: 70px;
+}
+
+.company-info .title{
+    margin-bottom: 25px;
+}
+.company-info p{
+    text-indent: 2em;
+    line-height: 24px;
+    color: #6b6b6b;
+}
+
+.company-info .p2{
+    margin: 10px 0 45px;
+}

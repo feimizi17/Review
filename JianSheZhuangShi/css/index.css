@@ -1,0 +1,463 @@
+.banner{
+    position: relative;
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+}
+
+.banner img{
+    width: 100%;
+    height: 700px;
+}
+.banner .dot{
+    position: absolute;
+    left: 50%;
+    bottom: 19px;
+    margin-left: -90px;
+}
+.banner .dot span{
+    float: left;
+    display: block;
+    width: 8px;
+    height: 8px;
+    background-color: #ffffff;
+    border: 3px solid transparent;
+    margin: 0 8px;
+    border-radius: 50%;
+    background-clip: content-box;
+}
+
+.banner .dot span:hover{
+    background-color: #668aca;
+    border: 3px solid #fff;
+}
+
+.banner .dot .active{
+    background-color: #668aca;
+    border: 3px solid #fff;
+}
+
+.project{
+    width: 100%;
+}
+
+.project-c{
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 120px;
+}
+
+.title .cname{
+    font-size: 30px;
+    line-height: 28px;
+    color: #767676;
+}
+
+.title .ename{
+    font-size: 12px;
+    line-height: 10px;
+    margin: 6px 0;
+    color: #767676;
+}
+
+.title .line .l{
+    float: left;
+    width: 60px;
+    height: 1px;
+    background-color: #a1a1a1;
+}
+
+.title .line .r{
+    float: right;
+    width: 300px;
+    height: 1px;
+    background-color: #a1a1a1;
+}
+
+.project-c .nav{
+    width: fit-content;
+    margin: 58px auto 54px;
+    overflow: hidden;
+}
+
+.project-c .nav .nav-item{
+    float: left;
+    width: 96px;
+    height: 20px;
+    line-height: 14px;
+    text-align: center;
+}
+
+.project-c .nav .nav-item span{
+    display: block;
+    width: 12px;
+	height: 1px;
+	background-color: #668aca;
+    margin: 3px auto;
+    opacity: 0;
+}
+
+.project-c .nav-item:hover span{
+    opacity: 1;
+}
+
+.project-c .nav-item:hover a{
+    font-size: 16px;
+    line-height: 16px;
+    color: #668aca;
+}
+
+.project-c .nav .col-line{
+    width: 1px;
+    height: 8px;
+    background-color:#b5b5b5;
+    float: left;
+    margin-top: 5px;
+    /* 疑问：为何写竖线之前 nav无法正常居中？块元素本身占行*/
+}
+
+.project-list{
+    overflow: hidden;
+}
+
+.project-item{
+    position: relative;
+    float: left;
+    width: 360px;
+    height: 270px;
+    margin-right: 60px;
+}
+
+.project-item .cover{
+    width: 100%;
+    height: 180px;
+}
+
+.project-item .info .city{
+    line-height: 14px;
+    margin: 28px 0 7px 50px;
+}
+
+.project-item .info .desc{
+    font-size: 12px;
+    line-height: 13px;
+    margin-left: 50px;
+}
+
+.project-item .info .icon{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 50px;
+    bottom: 30px;
+}
+
+.project-item .mask {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 360px;
+    height: 270px;
+    background-color: rgba(0,0,0,.4);
+    color: #fff;
+    opacity: 0;
+    padding-left: 50px;
+}
+
+.project-item:hover .mask{
+    opacity: 1;
+}
+
+.project-item:hover .info{
+    opacity: 0;
+}
+
+.project-item:hover .cover img{
+    width: 360px;
+    height: 270px;
+}
+
+.project-item .mask .p1{
+    line-height: 25px;
+    margin-top: 58px;
+}
+
+.project-item .mask .p2{
+    font-size: 12px;
+    line-height: 12px;
+    margin: 4px 0 14px;
+}
+
+.project-item .mask .p3{
+    width: 252px;
+    font-size: 12px;
+    line-height: 22px;
+}
+
+.product{
+    width: 100%;
+}
+
+.product-c{
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 120px;
+}
+
+.product-c .nav{
+    overflow: hidden;
+    width: fit-content;
+    margin: 54px auto 110px;
+}
+
+.product-c .nav-item{
+    float: left;
+    width: 164px;
+    height: 114px;
+    margin: 0 20px;
+}
+
+.product-c .nav-item .icon{
+    width: 100%;
+    height: 86px;
+    background-size: 124px 66px;
+    background: no-repeat center;
+}
+
+.product-c .nav-item .name{
+    text-align: center;
+    margin-top: 7px;
+}
+
+.product-c .nav-item .line{
+    display: block;
+    width: 16px;
+    height: 1px;
+    background-color: #668aca;
+    margin: 4px auto 0;
+    opacity: 0;
+}
+
+.product-c .nav-item:hover .icon{
+    background-color: #668aca;
+    /* 疑问：使用行内style设定背景图片后 hover背景色不生效 */
+}
+
+.product-c .nav-item:hover .name{
+    color: #668aca;
+    font-size: 16px;
+}
+
+.product-c .nav-item:hover .line{
+    opacity: 1;
+}
+
+.product-list{
+    overflow: hidden;
+}
+
+.product-item{
+    position: relative;
+    float: left;
+    width: 360px;
+    height: 360px;
+    margin-right: 60px;
+}
+
+.product-item .pic{
+    width: 360px;
+    height: 320px;
+}
+
+.product-item .info{
+    margin:0 114px 0 92px;
+}
+
+.product-item .mask{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 360px;
+    height: 320px;
+    background-color:rgba(0,0,0,.4);
+    opacity: 0;
+}
+
+.product-item .mask .num{
+    font-size: 30px;
+    height: 23px;
+    line-height: 23px;
+    margin-top: 131px;
+    margin-left: 84px;
+    color: #f8f8f8;
+}
+
+.product-item .mask .line{
+    display: block;
+    width: 80px;
+    height: 1px;
+    background-color: #f8f8f8;
+}
+
+.product-item .mask p{
+    color: #f8f8f8;
+    margin-top: 16px;
+    margin-left: 69px;
+}
+
+.product-item:hover .mask{
+    opacity: 1;
+}
+
+.product-item:hover .info{
+    opacity: 0;
+}
+
+
+.service{
+    width: 100%;
+    padding-top: 120px;
+}
+
+.service .title{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.service .bg{
+    margin-top: 60px;
+    width: 100%;
+    height: 700px;
+    background: url(../img/bg.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.service .bg .center{
+    position: relative;
+    width: 1200px;
+    height: 700px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.ser-list{
+    position: absolute;
+    right: 0;
+    bottom: 149px;
+}
+
+.ser-list .ser-item{
+    float: left;
+    width: 248px;
+    height: 148px;
+    border: 1px solid rgba(248,248,248,0.2);
+    margin-left: -1px;
+    /* 疑问：最左边框消失 局部透明度 */
+}
+
+.ser-item a{
+    color: #ffffff;
+    text-align: center;
+}
+
+.ser-item .cname{
+    font-size: 16px;
+    height: 16px;
+    line-height: 16px;
+    margin-top: 51px;
+}
+
+.ser-item .line{
+    display: block;
+    width: 30px;
+    height: 1px;
+    background-color: #ffffff;
+    margin: 13px auto;
+}
+
+.ser-item .ename{
+    font-size: 12px;
+    height: 10px;
+    line-height: 10px;
+}
+
+.ser-item:hover{
+    background-color: #668aca;
+}
+
+.news{
+    width: 100%;
+    padding-top: 120px;
+}
+
+.news-c{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.news-c .title{
+    margin-bottom: 60px;
+}
+
+.news-c .pic-item{
+    float: left;
+    width: 570px;
+    height: 570px;
+    margin-right: 50px;
+}
+
+.news-c .pic-item .long{
+    display: block;
+    width: 570px;
+	height: 270px;
+    margin-bottom: 30px;
+}
+
+.news-c .pic-item .small{
+    float: left;
+    width: 270px;
+	height: 270px;
+    margin-right: 30px;
+}
+
+.about{
+    width: 100%;
+    padding-top: 150px;
+    padding-bottom: 199px                                                  ;
+}
+
+.about-c{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.about-c .title{
+    margin-bottom: 60px;
+}
+
+.about-c .cover{
+    float: left;
+    width: 500px;
+    height: 300px;
+}
+
+.about-c .info{
+    float: right;
+    width: 675px;
+    margin-top: 27px;
+}
+
+.about-c .info p{
+    line-height: 24px;
+    margin-bottom: 24px;
+}
+
+
+
+
+
+

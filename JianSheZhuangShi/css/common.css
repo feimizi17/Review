@@ -1,0 +1,105 @@
+/* 顶部 */
+.top{
+    width: 100%;
+    height: 100px;
+}
+
+.top-c{
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.top-c .logo{
+    float: left;
+    width: 221px;
+    height: 52px;
+    margin: 24px 0;
+}
+
+.top-c .nav{
+    float: right;
+}
+
+.top-c .nav-item{
+    float: left;
+    width: 32px;
+    height: 100px;
+    margin-left: 78px;
+    line-height: 100px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.top-c .nav-item span{
+    display: block;
+    width: 20px;
+    height: 1px;
+    background-color: #668aca;
+    opacity: 0;
+    margin: 0 auto;
+    margin-top: -34px;
+}
+
+.top-c .nav-item:hover a{
+    font-size: 16px;
+    color: #668aca;
+}
+/* 注意这里要指定到a才会变色*/
+
+.top-c .nav-item:hover span{
+    opacity: 1;
+}
+
+/* 底部 */
+.foot{
+    width: 100%;
+    height: 300px;
+    background-color: #f7f7f7;
+}
+
+.foot-c{
+    width: 1200px;
+    height: 300px;
+    margin: 0 auto;
+    padding-top: 98px;
+}
+
+.foot-c .follow{
+    float: left;
+    margin-right: 131px;
+    margin-left: 135px;
+}
+
+.foot-c .follow .cname{
+    font-size: 16px;
+    height: 16px;
+    line-height: 16px;
+    color: #767676;
+    margin-bottom: 10px;
+}
+
+.foot-c .follow .icon img{
+    float: left;
+    margin-right: 19px;
+}
+
+.foot-c .locate{
+    float: left;
+    height: 74px;
+    padding-left: 60px;
+    margin-right: 131px;
+    border-left: 1px solid #e9e9e9;
+}
+
+.foot-c .email{
+    float: left;
+    height: 74px;
+    padding-left: 60px;
+    border-left: 1px solid #e9e9e9;
+}
+
+.foot-c p{
+    line-height: 14px;
+    margin-bottom: 16px;
+}
