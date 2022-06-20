@@ -1,0 +1,409 @@
+/* top part */
+
+.top{
+    width: 100%;
+    height: 60px;
+}
+
+.top-c{
+    width: 1440px;
+    height: 60px;
+    margin: 0 auto;
+}
+
+.top-c .logo{
+    float: left;
+    width: 22px;
+    height: 29px;
+    margin-left: 80px;
+    padding: 15px 0 16px;
+}
+
+.top-c .nav{
+    float: right;
+}
+
+.top-c .nav-item{
+    float: left;
+    margin: 0 39px;
+    line-height: 60px;
+    text-transform: uppercase;
+}
+
+.top-c .nav-item img{
+    width: 18px;
+    height: 17px;
+}
+
+.top-c .nav-item .line{
+    display: block;
+    width: 40px;
+    height: 2px;
+    margin: -13px auto 0;
+    background-color: #161616;
+    opacity: 0;
+}
+
+.top-c .nav-item:hover .line{
+    opacity: 1;
+}
+
+/* banner part */
+
+.banner{
+    position: relative;
+    background: url(../img/banner2.png) no-repeat center;
+    width: 100%;
+    height: 800px;
+    background-size: cover;
+/* 写成bg-image时图片显示不出来 */
+}
+
+.banner .dot {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    margin-left: -120px;
+}
+
+.banner .dot span{ 
+    float: left;
+    width: 20px;
+    height: 20px;
+    background-color: #d9d9d9;
+    margin: 0 30px;
+    /* 怎么只显示一个方块? 正解写三个span 注意要写在dot层级下面否则又不显示 */
+    border-radius: 50%;
+}
+
+.banner .dot span:hover{
+    background-color: #535353;
+}
+
+/* 中间部分 */
+.show .show-c{
+    width: 1440px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.show-c .collect-list{
+    overflow: hidden;
+    padding-top: 60px;
+}
+
+.show-c .collect-item{
+    position: relative;
+    float: left;
+    width: 464px;
+    height: 270px;
+    margin-right: 24px;
+    background-color: #FBF1EC;
+}
+
+.show-c .collect-item .info{
+    position: absolute;
+    top: 82px;
+    left: 36px;
+}
+
+.show-c .info .title{
+    font-weight: bolder;
+    font-size: 22px;
+    line-height: 30px;
+    padding-bottom: 20px;
+}
+
+.show-c .info .more{
+    font-size: 13px;
+    color: #373737;
+}
+
+/* 第二层 导航 */
+.show-c .nav{
+    overflow: hidden;
+    width: fit-content;
+    /* 写上宽度才能显示居中 */
+    margin: 150px auto 0;
+}
+
+.show-c .nav-item{
+    float: left;
+    font-size: 18px;
+    margin: 0 40px;
+    text-transform: uppercase;
+}
+
+.show-c .nav-item .line{
+    display: block;
+    /* 漏写block时线条不显示 */
+    width: 30px;
+    height: 2px;
+    background-color: #161616;
+    margin: 6px auto 0;
+    opacity: 0;
+}
+
+.show-c .nav-item:hover .line{
+    opacity: 1;
+}
+
+/* 第三层 展示 */
+.show-c .pro-list{
+    overflow: hidden;
+    padding-bottom: 150px;
+    padding-top: 52px;
+}
+
+.show-c .pro-item{
+    float: left;
+    width: 315px;
+    margin-right: 60px;
+}
+
+.show-c .pro-item img{
+    display: block;
+    width: 315px;
+    height: 420px;
+}
+
+.show-c .pro-item .info{
+    overflow: hidden;
+    /* 重名时务必要注意选择器 此处因继承了上面info定位出错 更改上面info选择器后修复*/
+}
+
+.show-c .pro-item .info .ename{
+    float: left;
+    font-weight: bolder;
+    font-size: 20px;
+    line-height: 28px;
+    margin-top: 15px;
+}
+    
+.show-c .pro-item .info .price{
+    float: right;
+    text-align: center;
+    line-height: 22px;
+    margin-top: 19px;
+}
+    
+.show-c .pro-item .text{
+    color: #929292;
+    line-height: 22px;
+    margin-top: 4px;
+}
+
+/* about part */
+
+.about{
+    width: 100%;
+    height: 360px;
+    background: url(../img/未标题-1.png) no-repeat center;
+    background-size: cover;
+}
+
+.about-c{
+    width: 1440px;
+    height: 360px;
+    margin: 0 auto;
+}
+
+.about-c .contain{
+    margin-left: 100px;
+}
+
+.about-c .contain .title{
+    font-weight: bolder;
+    font-size: 24px;
+    padding-top: 74px;
+    line-height: 33px;
+}
+
+.about-c .contain .desc{
+    font-size: 14px;
+    color: #505050;
+    padding: 20px 0 40px;
+    line-height: 20px;
+}
+
+.about-c .contain .more{
+    display: block;
+    width: 120px;
+    height: 40px;
+    background-color: #161616;
+    font-size: 14px;
+    color: #FFFFFF;
+    line-height: 40px; 
+    text-align: center;
+    /* 设定这个方块不用指定到a */
+}
+
+/* event */
+
+.event{
+    width: 100%;
+    height: 774px;
+}
+
+.event-list{
+    width: 1440px;
+    height: 774px;
+    margin: 0 auto;
+    padding-top: 150px;
+}
+
+.event-item {
+    position: relative;
+    float: left;
+    width: 450px;
+    height: 450px;
+    margin-right: 45px;
+}
+
+.event-item img{
+    width: 100%;
+    height: 100%;
+}
+
+.event-item .mask{
+    position: absolute;
+    left: 0;
+    bottom: 90px;
+    width: 450px;
+    height: 100px;
+    opacity: 0.8;
+    background: #FFFFFF;
+    text-align: center;
+}
+
+.event-item .mask .title{
+    font-size: 24px;
+    color: #4B5751;
+    margin: 23px 0 1px;
+    line-height: 33px;
+}
+
+.event-item .mask .desc{
+    font-size: 14px;
+    color: #777777;
+    line-height: 20px;
+}
+
+/* join */
+.join{
+    width: 100%;
+    height: 300px;
+    background: #FBF1EC;
+    text-align: center;
+    padding-top: 0.1px;
+    /* why 0.1px? */
+}
+
+.join .title{
+    font-weight: bolder;
+    font-size: 35px;
+    line-height: 49px;
+    color: #161616;
+    margin-top: -25px;
+    margin-bottom: 40px;
+    /* 为什么padding-top: 0.1px;margin-top: -25px;配合使用title就上去了一半呢 */
+}
+
+/* 难点input的样式设定 */
+.join input{
+    width: 750px;
+    height: 26px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #D5D5D5;
+    text-align: center;
+    font-size: 14px;
+    color: #9E9E9E;
+    line-height: 20px;
+    background-color: #FBF1EC;
+
+}
+.join .send{
+    display: block;
+    width: 120px;
+    height: 40px;
+    background: #161616;
+    font-size: 14px;
+    color: #FFFFFF;
+    line-height: 40px;
+    margin: 39px auto 30px;
+}
+
+.join .desc{
+    display: block;
+    width: 544px;
+    height: 60px;
+    font-size: 14px;
+    color: #777777;
+    margin: 0 auto;
+}
+
+/* foot */
+.foot{
+    width: 100%;
+    height: 269px;
+    background-color: #161616;
+}
+
+.foot-c{
+    width: 1440px;
+    height: 269px;
+    margin: 0 auto;
+}
+
+.foot-c .links{
+    padding-top: 70px;
+    overflow: hidden;
+}
+
+.foot-c dl{
+    float: left;
+}
+
+.foot-c dl dt{
+    font-size: 16px;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+    margin-right: 136px;
+}
+
+.foot-c dl dd a{
+    display: block;
+    font-size: 12px;
+    color: #FFFFFF;
+    opacity: 0.8;
+    margin-bottom: 6px;
+    line-height: 17px;
+}
+
+.foot-c .first{
+    margin-left: 168px;
+}
+
+.foot-c .first dt{
+    margin-bottom: 17px;
+    /* 设计图上是20px 为什么这里要写17px才能和右边水平？ */
+}
+
+.foot-c .first img{
+    display: block;
+    width: 22px;
+    height: 29px;
+    background-color: #fff;
+}
+
+.foot-c .first dd a{
+    line-height: 17px;
+}
+
+.foot-c .app img{
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+}
